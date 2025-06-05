@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+        First Name 
+        Last Name
+        Email
+        Phone Number
+        Password
+        Gender
+        Date of Birth
+        Address
+        City
+        State
+        Zip Code
+        Country
+        Hobbies
+        Profile Picture
+        Confirm
+        Submit Button
+        Reset Button
+    -->
+
+    <form>
+
+        <label for="fn">First Name</label>
+        <input type="text" id="fn" placeholder="Enter First Name" required>
+
+        <br><br>
+
+        <!-- Text -->
+        <label for="ln">Last Name</label>
+        <input type="text" id="ln" placeholder="Enter Last Name" required>
+
+        <br><br>
+
+        <!-- E-mail -->
+        <label for="email">Email</label>
+        <!-- for sug u have to press ctrl + spacebar -->
+        <input type="email" id="email" placeholder="example123@gmail.com" required>
+
+        <br><br>
+        <!-- Phone Number -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" required>
+
+        <br><br>
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="DOB">Date of Birth</label>
+        <input type="date" id="DOB">
+
+        <br><br>
+
+        <!-- Radio Button -->
+        <label for="Gender">Gender</label>
+        <input type="radio" id="Gender" name="Gender">
+        <label for="male">Male</label>
+        <input type="radio" id="Gender" name="Gender">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <!-- Address -->
+        <label for="address">Address</label>
+        <textarea name="" id="address" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <!-- City : Dropdown-->
+
+        <label for="State">State</label>
+        <select name="" id="State">
+            <option value="">Select State</option>
+            <option value="">Gujrat</option>
+            <option value="">Mumbai</option>
+            <option value="">Delhi</option>
+            <option value="">Bangalore</option>
+            <option value="">Chennai</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Zip Code -->
+        <label for="zip">Zip Code</label>
+        <input type="number" id="zip" placeholder="Enter Zip Code" required>
+
+        <br><br>
+
+        <!-- Country -->
+        <label for="country">Country</label>
+        <select name="" id="country">
+            <option value="">Select Country</option>
+            <option value="">India</option>
+            <option value="">USA</option>
+            <option value="">UK</option>
+            <option value="">Canada</option>
+            <option value="">Australia</option>
+        </select>
+
+        <br><br>
+
+        <!-- Hobbies -->
+        <label for="hobbies">Hobbies</label>
+
+        <input type="checkbox" id="hobbies" name="hobbies" value="Reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="hobbies" name="hobbies" value="Traveling">
+        <label for="traveling">Traveling</label>
+
+        <input type="checkbox" id="hobbies" name="hobbies" value="Gaming">
+        <label for="gaming">Gaming</label>
+
+        <br><br>
+
+        <!-- Profile Picture -->
+        <label for="profile">Profile Picture</label>
+        <input type="file" id="profile" accept="image/*">
+
+        <br><br>
+
+        <!-- Confirm -->
+        <label for="confirm">Confirm</label>
+        <input type="checkbox" id="confirm" name="confirm" required>
+        <label for="confirm">I confirm that the above information is correct</label>
+        <br><br>
+
+
+        <!-- Submit Button -->
+
+        <!-- <button type="submit">Submit</button> -->
+        <input type="submit" value="Submit">
+
+        <!-- Reset Button -->
+        <input type="reset" value="Reset">
+
+    </form>
+
+
+</body>
+</html>
