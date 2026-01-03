@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavyan Nayak - Software Developer Resume</title>
+    <style>
+        @media print {
+            body { margin: 0; padding: 0; }
+            .page-break { page-break-before: always; }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #ffffff;
+            padding: 40px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 15px;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .header .title {
+            font-size: 18px;
+            color: #34495e;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 11px;
+            color: #555;
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+        
+        .contact-info a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        
+        .summary {
+            font-size: 11px;
+            text-align: justify;
+            line-height: 1.6;
+            color: #444;
+        }
+        
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 14px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+        
+        .item-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .item-date {
+            font-size: 10px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        .item-subtitle {
+            font-size: 11px;
+            color: #555;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        
+        .item-location {
+            font-size: 10px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .tech-stack {
+            font-size: 10px;
+            color: #2980b9;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        ul {
+            margin-left: 18px;
+            margin-top: 4px;
+        }
+        
+        li {
+            font-size: 11px;
+            margin-bottom: 4px;
+            line-height: 1.5;
+            color: #444;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6px;
+            font-size: 11px;
+        }
+        
+        .skill-item {
+            display: flex;
+            line-height: 1.5;
+        }
+        
+        .skill-label {
+            font-weight: 700;
+            color: #2c3e50;
+            min-width: 180px;
+        }
+        
+        .skill-content {
+            color: #444;
+        }
+        
+        .certifications-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .certifications-list li {
+            padding-left: 16px;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        
+        .certifications-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #2980b9;
+            font-weight: bold;
+        }
+        
+        .achievements-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .achievements-list li {
+            padding-left: 16px;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        
+        .achievements-list li:before {
+            content: "★";
+            position: absolute;
+            left: 0;
+            color: #f39c12;
+            font-weight: bold;
+        }
+        
+        .page-break {
+            margin-top: 30px;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #2980b9;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .print-button:hover {
+            background: #21618c;
+        }
+        
+        @media print {
+            .print-button { display: none; }
+            body { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">📄 Save as PDF (Ctrl+P)</button>
+
+    <div class="header">
+        <h1>KAVYAN NAYAK</h1>
+        <div class="title">Software Developer</div>
+        <div class="contact-info">
+            📧 kavyannayak104@gmail.com | 📱 +91 94276 98999 | 📍 Ahmedabad, Gujarat, India<br>
+            💼 <a href="https://linkedin.com/in/your-profile">linkedin.com/in/kavyan-nayak</a> | 
+            💻 <a href="https://github.com/your-username">github.com/kavyannayak</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="summary">
+            Software Developer with hands-on experience in full-stack development using Java, Spring Boot, React.js, and cloud technologies. Proven track record in building scalable web applications and mentoring 500+ students in programming fundamentals. Oracle Certified professional with expertise in AI, Data Science, and Cloud Infrastructure. Passionate about developing efficient, user-centric solutions and leveraging emerging technologies to solve complex business problems.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="education-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Bachelor of Technology (B.Tech) in Computer Engineering</div>
+                    <div class="item-subtitle">Swarnim Startup & Innovation University, Ahmedabad, Gujarat</div>
+                </div>
+                <div class="item-date">2022 - 2026 (Expected)</div>
+            </div>
+            <div style="font-size: 11px; color: #444; margin-top: 4px;">
+                <strong>CGPA:</strong> X.XX/10.0 | <strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Cloud Computing, Software Engineering, Web Technologies
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <span class="skill-label">Programming Languages:</span>
+                <span class="skill-content">Java, Python, C, C++, JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-label">Frontend Development:</span>
+                <span class="skill-content">React.js, HTML5, CSS3, JSP, Bootstrap, Material-UI</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-label">Backend Development:</span>
+                <span class="skill-content">Spring Boot, Node.js, RESTful APIs, Microservices, Express.js</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-label">Database Technologies:</span>
+                <span class="skill-content">MySQL, SQL, PL/SQL, Oracle Cloud Database</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-label">Cloud & DevOps:</span>
+                <span class="skill-content">AWS (EC2, S3, RDS), Oracle Cloud Infrastructure, CI/CD Pipelines</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-label">Tools & Platforms:</span>
+                <span class="skill-content">Git, GitHub, Postman, VS Code, IntelliJ IDEA, Agile/Scrum</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-label">Libraries & Frameworks:</span>
+                <span class="skill-content">Pandas, NumPy, JWT Authentication, NodeMailer</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-label">Core Concepts:</span>
+                <span class="skill-content">Data Structures & Algorithms, OOP, Design Patterns, API Development</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="experience-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Backend Java Developer Intern</div>
+                    <div class="item-subtitle">Zidio Development <span class="item-location">| Ahmedabad, Gujarat</span></div>
+                </div>
+                <div class="item-date">August 2024 - October 2024</div>
+            </div>
+            <ul>
+                <li>Developed Java-based backend modules using <strong>Spring Boot</strong> and <strong>MySQL</strong>, serving 1000+ concurrent users</li>
+                <li>Built and optimized 15+ <strong>RESTful APIs</strong>, improving response time by 35% through query optimization</li>
+                <li>Collaborated with 5-member <strong>Agile development team</strong> for feature integration, code reviews, and sprint planning</li>
+                <li>Implemented <strong>JWT-based authentication</strong> and authorization system for secure user access</li>
+                <li>Utilized <strong>Postman</strong> for comprehensive API testing and <strong>GitHub</strong> for version control management</li>
+                <li>Debugged and resolved 25+ production issues, enhancing system stability and performance</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Teaching & Programming Mentor</div>
+                    <div class="item-subtitle">Royal Technosoft <span class="item-location">| Ahmedabad, Gujarat</span></div>
+                </div>
+                <div class="item-date">May 2023 - Present</div>
+            </div>
+            <ul>
+                <li>Train and mentor <strong>500+ students</strong> in C, C++, Java, Python, and Data Structures through structured learning programs</li>
+                <li>Design and deliver 30+ practical coding sessions per month, focusing on <strong>OOP</strong>, algorithms, and project-based learning</li>
+                <li>Develop comprehensive course materials, coding exercises, and assessment frameworks for beginner to intermediate levels</li>
+                <li>Guide students in building 50+ real-world projects, strengthening problem-solving and debugging capabilities</li>
+                <li>Achieved <strong>40% improvement</strong> in student assessment scores and 95% course completion rate</li>
+                <li>Collaborate with training team to update curriculum based on industry trends and student feedback</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+        
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">ZIDIO Connect - Internship & Job Management Portal</div>
+            </div>
+            <div class="tech-stack">Tech Stack: React.js, Spring Boot, Node.js, MySQL, AWS, JWT, REST APIs</div>
+            <ul>
+                <li>Architected and developed full-stack web portal with <strong>role-based access control</strong> for students, recruiters, and administrators</li>
+                <li>Built 20+ RESTful APIs using Spring Boot to handle user authentication, job postings, and application management</li>
+                <li>Implemented JWT-based authentication system with password encryption and session management</li>
+                <li>Designed responsive React.js frontend with Material-UI components, ensuring cross-browser compatibility</li>
+                <li>Created normalized MySQL database schema with 12+ tables, handling 500+ user profiles and 200+ job listings</li>
+                <li>Integrated automated email notification system using NodeMailer for application status updates</li>
+                <li>Deployed application on <strong>AWS EC2</strong> with RDS database, implementing CI/CD pipeline for automated deployments</li>
+                <li>Reduced manual application processing time by <strong>70%</strong> through automated workflows and dashboard analytics</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">Programming Assessment & Learning Platform</div>
+            </div>
+            <div class="tech-stack">Tech Stack: Java, Spring Boot, MySQL, React.js, REST APIs</div>
+            <ul>
+                <li>Developed web-based platform for automated code evaluation supporting C, C++, Java, and Python</li>
+                <li>Implemented secure code execution environment with time and memory limit constraints</li>
+                <li>Built admin dashboard for creating assignments, managing test cases, and tracking student progress</li>
+                <li>Created real-time leaderboard and performance analytics for 200+ active students</li>
+                <li>Designed RESTful APIs for submission handling, result computation, and user management</li>
+                <li>Achieved <strong>90% accuracy</strong> in automated test case evaluation and reduced grading time by 80%</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">Cloud-Based Data Analytics Dashboard</div>
+            </div>
+            <div class="tech-stack">Tech Stack: Python, Oracle Cloud Infrastructure, Pandas, NumPy, Plotly, Flask</div>
+            <ul>
+                <li>Developed interactive data visualization dashboard using Python Flask and Plotly.js</li>
+                <li>Implemented ETL pipelines with Pandas and NumPy for processing datasets with 10,000+ records</li>
+                <li>Created 8+ dynamic charts including line graphs, bar charts, and heatmaps for real-time insights</li>
+                <li>Deployed application on <strong>Oracle Cloud Infrastructure</strong> with automated data refresh every 6 hours</li>
+                <li>Built responsive UI with filtering, sorting, and export capabilities (CSV, PDF)</li>
+                <li>Optimized data processing algorithms, reducing computation time by <strong>45%</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="certifications-list">
+            <li><strong>Oracle Cloud Infrastructure 2025 Generative AI Professional</strong> - Oracle (2025)</li>
+            <li><strong>Oracle Cloud Infrastructure 2025 Data Science Professional</strong> - Oracle (2025)</li>
+            <li><strong>Oracle Cloud Infrastructure 2025 AI Foundations Associate</strong> - Oracle (2025)</li>
+            <li><strong>Oracle Cloud Infrastructure 2025 Foundations Associate</strong> - Oracle (2025)</li>
+            <li><strong>Oracle Cloud Data Management 2023 Foundations Associate</strong> - Oracle (2023)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Achievements & Leadership</div>
+        <ul class="achievements-list">
+            <li><strong>Educated 500+ Students:</strong> Successfully trained students in programming fundamentals with 40% improvement in outcomes</li>
+            <li><strong>Open Source Contributor:</strong> Contributed to 2 open-source projects on GitHub with 10+ merged pull requests</li>
+            <li><strong>Technical Workshop Leader:</strong> Organized college coding workshops on Cloud Computing and Web Development (50+ attendees)</li>
+            <li><strong>Hackathon Participant:</strong> Competed in multiple hackathons, developing innovative solutions under time constraints</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <div style="font-size: 11px; color: #444;">
+            <strong>English</strong> - Professional Working Proficiency | 
+            <strong>Hindi</strong> - Native/Bilingual | 
+            <strong>Gujarati</strong> - Native/Bilingual
+        </div>
+    </div>
+
+</body>
+</html>
