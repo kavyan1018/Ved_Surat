@@ -1,0 +1,23 @@
+what is switch case in C?
+-> Switch case is a control statement in C that allows you to execute different blocks of code based on the value of a variable or expression. It is an alternative to using multiple if-else statements and can make your code more organized and easier to read.
+
+
+syntax of switch case in C:
+
+expression : we need to take input from the user 
+
+switch(expression){
+
+    case 1:
+        // code to be executed if expression equals 1
+        break;
+    case 2:
+        // code to be executed if expression equals 2
+        break;
+    case 3:
+        // code to be executed if expression equals 3
+        break;
+
+    default:
+        // code to be executed if expression does not match any case
+}
